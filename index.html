@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <title>Rick And Morty JS</title>
+</head>
+<body class="bg-dark text-light">
+    <div class="container">
+        <div class="row">
+            <nav class="navbar bg-dark border rounded-3">
+                <div class="container-fluid">
+                  <a class="navbar-bran" style="color: white;">Rick y Morty App JavaScript</a>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                  </form>
+                </div>
+              </nav>
+        </div>
+        <div class="row">
+        <hr>
+        <h1>App de Rick & Morty con JS</h1>
+        <hr>
+        </div>
+    <div class="row d-grid gap-2" id="botones">  
+            <button class="btn btn-outline-success btn-lg" id="prev" data-id>Anterior</button>
+            <button class="btn btn-outline-primary btn-lg" id="next" data-id>Siguiente</button>
+    </div>
+    <div class="row" id="characters"></div>
+
+  <!--Modal-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" 
+   aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark ">
+        <div class="modal-header">
+          <h5 class="modal-title " id="exampleModalLabel">Rick & Morty</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
